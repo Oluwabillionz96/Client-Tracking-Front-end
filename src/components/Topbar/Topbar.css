@@ -1,0 +1,13 @@
+.topbar-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid var(--gray-color);
+  width: calc(100vw - 172px);
+  height: 60px;
+}
+
+
+/* @media (max-width: 1150px) {
+
+} */
