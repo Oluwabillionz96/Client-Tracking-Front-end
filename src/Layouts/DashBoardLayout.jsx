@@ -5,7 +5,7 @@ import MenuList from "../Components/MenuList/MenuList";
 import "./layout.css";
 import { useState } from "react";
 import { LeftNavSide, RightNavSide } from "../Components/Navs/Navs";
-import DashBoard from "../Pages/DashBoard/DashBoard";
+import { Outlet } from "react-router-dom";
 
 const DashBoardLayout = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -23,7 +23,7 @@ const DashBoardLayout = () => {
           <RightNavSide />
         </Header>
         <Content>
-          <DashBoard />
+          <Outlet />
         </Content>
       </Layout>
     </Layout>

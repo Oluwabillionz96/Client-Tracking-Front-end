@@ -8,7 +8,7 @@ const PieChart = () => {
     datasets: [
       {
         label: "Client Finantial Strength",
-        data: [12000, 6000, 3000],
+        data: [3, 9, 7],
         backgroundColor: [
           "rgba(255, 99, 132, 0.6)",
           "rgba(54, 162, 235, 0.6)",
