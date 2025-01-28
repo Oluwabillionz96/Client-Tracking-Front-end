@@ -1,0 +1,23 @@
+.left {
+  flex: 1;
+  gap: 2.8rem;
+  justify-content: start;
+}
+
+.left .welcome {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.right {
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: end;
+}
+
+.right div {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}

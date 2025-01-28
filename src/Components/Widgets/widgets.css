@@ -1,0 +1,26 @@
+.widget {
+  justify-content: start;
+  border: 1px solid #ddd;
+  flex: 1;
+  border-radius: 10px;
+  padding-left: 1.95rem;
+  gap: 2rem;
+}
+
+.widget div:nth-child(1) {
+  font-size: 3.75rem;
+}
+
+.widget div:nth-child(2) > p.item,
+.amount {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 22.5px;
+  color: #737373;
+}
+.widget div:nth-child(2) > p.amount {
+  font-size: 2rem;
+  line-height: 48px;
+  text-align: center;
+}
+  

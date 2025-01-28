@@ -1,0 +1,13 @@
+.sidebar {
+  height: 200vh;
+  background-color: #ddd;
+}
+
+.fold {
+  font-size: 2rem;
+}
+
+.head {
+  width: 100%;
+  background-color: #ddd;
+}
