@@ -1,41 +1,34 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./Pages/Dashboard/Dashboard";
+import React from "react";
+import DashBoardLayout from "./Layouts/DashBoardLayout";
+import DashBoard from "./Pages/DashBoard/DashBoard";
+import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
+import { Route, Routes } from "react-router-dom";
+import RootLayout from "./Layouts/RootLayout";
+import Login from "./Pages/Login/Login";
 import NotFound from "./Pages/NotFound/NotFound";
 import Profile from "./Pages/Profile/Profile";
+import Projects from "./Pages/Projects/Projects";
 import Prospects from "./Pages/Prospects/Prospects";
 import Schedule from "./Pages/Schedule/Schedule";
-import Login from "./Pages/Login/Login";
-import SignUp from "./Pages/SignUp/SignUp";
-import Projects from "./Pages/Projects/Projects";
-import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
-
-import RootLayout from "./Layouts/RootLayout";
-import DashBoardLayout from "./Layouts/DashBoardLayout";
-import "./App.css";
-
-function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <RootLayout />,
-      children: [
-        { index: true, element: <Login /> },
-        { path: "signup", element: <SignUp /> },
-        { path: "forgot", element: <ForgotPassword /> },
-        {
-          path: "dashboard",
-          element: <DashBoardLayout />,
-          children: [
-            { index: true, element: <Dashboard /> },
-            { path: "project", element: <Projects /> },
-            { path: "schedule", element: <Schedule /> },
-            { path: "prospects", element: <Prospects /> },
-          ],
-        },
-      ],
-    },
-  ]);
-  return <RouterProvider router={router}></RouterProvider>;
-}
+import SignUP from "./Pages/SignUP/SignUP";
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<SignUP />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="*" element={<NotFound />} />
+        <Route element={<DashBoardLayout />}>
+          <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/prospects" element={<Prospects />} />
+        </Route>
+      </Route>
+    </Routes>
+  );
+};
 
 export default App;

@@ -3,6 +3,8 @@ import LineChart from "../../Components/Charts/LineChart";
 import PieChart from "../../Components/Charts/PieChart";
 import Widget from "../../Components/Widgets/Widget";
 import { UsergroupAddOutlined, ContactsOutlined } from "@ant-design/icons";
+import Location from "../../Components/Location/Location";
+import Table from "../../Components/Table/Table";
 
 const DashBoard = () => {
   return (
@@ -33,7 +35,7 @@ const DashBoard = () => {
         </div>
         <div
           className="pie-and-shedule flexs"
-          style={{ width: "96%", gap: "3rem", margin: "3.75rem auto 0" }}
+          style={{ width: "96%", gap: "3rem", margin: "3.75rem auto 7.6rem" }}
         >
           <PieChart />
           <div
@@ -46,6 +48,8 @@ const DashBoard = () => {
             }}
           ></div>
         </div>
+        <Location />
+        <Table />
       </section>
     </main>
   );

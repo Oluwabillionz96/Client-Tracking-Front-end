@@ -30,7 +30,7 @@ const LineChart = () => {
     ],
   };
   return (
-    <div style={{ flex: 1, border: "2px solid #ddd" }}>
+    <div style={{ flex: 1, border: "2px solid #ddd" }} className="flexs">
       <Line data={lineData} options={{ responsive: true }} />
     </div>
   );
