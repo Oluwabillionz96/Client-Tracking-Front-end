@@ -96,3 +96,9 @@ input[type="text"] {
   right: 1.5rem;
   top: 1rem;
 }
+
+.change {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}

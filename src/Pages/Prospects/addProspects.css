@@ -1,0 +1,40 @@
+.add-prospect {
+  width: 31.75rem;
+  position: absolute;
+  top: 15%;
+  left: 24rem;
+  background-color: #fff;
+}
+
+.add-prospect header {
+  height: 6.6rem;
+  background-color: #d9d9d9;
+  padding-top: 0.9rem;
+}
+
+.add-prospect header h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.add-prospect header p {
+  font-size: 0.93rem;
+  width: 26.9rem;
+  margin-left: 5rem;
+  margin-bottom: 0.75rem;
+}
+
+.add-prospect form {
+  gap: 1.25rem;
+}
+
+.add-prospect label {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.add-prospect form .flexs {
+  height: fit-content;
+}
