@@ -4,6 +4,9 @@
   top: 15%;
   left: 24rem;
   background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px black, -1px 1px 10px black;
 }
 
 .add-prospect header {
@@ -27,6 +30,9 @@
 
 .add-prospect form {
   gap: 1.25rem;
+  align-items: start;
+  width: 70%;
+  margin: 2.6rem auto 1.8rem;
 }
 
 .add-prospect label {
@@ -36,5 +42,28 @@
 }
 
 .add-prospect form .flexs {
-  height: fit-content;
+  gap: 1.1875rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.add-prospect form input {
+  width: 18.125rem;
+  height: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem 0 0.4375rem 0.8125rem;
+  border: 1px solid #d9d9d9;
+}
+
+.add-prospect button {
+  margin-bottom: 2.625rem;
+  background-color: #d9d9d9;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+.btn-con {
+  width: fit-content;
+  gap: 0.75rem;
+  margin: 0 auto;
 }

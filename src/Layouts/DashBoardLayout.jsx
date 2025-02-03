@@ -22,7 +22,7 @@ const DashBoardLayout = () => {
           />
           <RightNavSide />
         </Header>
-        <Content>
+        <Content className="content">
           <Outlet />
         </Content>
       </Layout>

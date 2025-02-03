@@ -1,7 +1,12 @@
 import "./addProspects.css";
 const AddProspects = () => {
   return (
-    <section className="add-prospect">
+    <section
+      className="add-prospect"
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
       <header>
         <h2>Add a prospect</h2>
         <p>
@@ -37,8 +42,10 @@ const AddProspects = () => {
           <input type="file" name="image" id="image" placeholder="@prospect" />
         </div>
       </form>
-      <button>Reset</button>
-      <button>Save</button>
+      <div className="btn-con flexs">
+        <button>Reset</button>
+        <button>Save</button>
+      </div>
     </section>
   );
 };
